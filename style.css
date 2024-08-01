@@ -56,4 +56,9 @@ body{
     margin: 20px auto 0;
     border-radius: 12px;
     cursor: pointer;
+    display: none;
+}
+#next-btn:hover{
+    background: #c9f870;
+    color: #222;
 }
