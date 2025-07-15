@@ -361,7 +361,14 @@ function showQuestion() {
   currentQuestion.answers.forEach((answer) => {
     const button = document.createElement("button");
     button.innerHTML = answer.text;
-    nextbutton.innerHTML = "Play again";
+    if(questionNo === selectedQuestions.length){
+      nextbutton.innerHTML = "Finish Check Score";
+    }
+    else{
+      nextbutton.innerHTML = "Next";
+    }
+      
+
     button.classList.add("btn");
     answerButton.appendChild(button);
     if (answer.correct) {
