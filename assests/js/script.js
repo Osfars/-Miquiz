@@ -1,7 +1,7 @@
 alert(
   "This quiz is for entertainment purposes only. Each question will have 15 seconds to answer. \n" +
-  "When a question is left unanswered within the given time, the system automatically selects any incorrect options with a red colour."+
-  " It highlights the correct answer with a green colour."
+    "When a question is left unanswered within the given time, the system automatically selects any incorrect options with a red colour." +
+    " It highlights the correct answer with a green colour."
 );
 
 const questions = [
@@ -361,13 +361,11 @@ function showQuestion() {
   currentQuestion.answers.forEach((answer) => {
     const button = document.createElement("button");
     button.innerHTML = answer.text;
-    if(questionNo === selectedQuestions.length){
+    if (questionNo === selectedQuestions.length) {
       nextbutton.innerHTML = "Finish Check Score";
-    }
-    else{
+    } else {
       nextbutton.innerHTML = "Next";
     }
-      
 
     button.classList.add("btn");
     answerButton.appendChild(button);
